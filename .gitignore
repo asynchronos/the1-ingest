@@ -1,0 +1,7 @@
+*.vscode/
+*.vs/
+*.venv/
+*__pycache__*/
+.env
+keyfile.json
+.df-credentials.json
