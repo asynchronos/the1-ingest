@@ -1,8 +1,9 @@
 functions-framework==3.*
+gcsfs
 google-api-python-client
 google-cloud-bigquery
 google-cloud-storage
-pandas
-requests
 openpyxl
+pandas
 pyarrow
+requests
