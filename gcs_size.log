@@ -1,0 +1,15 @@
+6274420      gs://cdg-data-uni-doff-the1-dev/campaign_request
+7256750232   gs://cdg-data-uni-doff-the1-dev/customer_request
+8548         gs://cdg-data-uni-doff-the1-dev/member_active_by_location_crc/par_month=201901/par_day=20190101
+419237823    gs://cdg-data-uni-doff-the1-dev/member_active_last_24m
+4277         gs://cdg-data-uni-doff-the1-dev/member_active_total_crc/par_month=201901/par_day=20190101
+1945876      gs://cdg-data-uni-doff-the1-dev/member_expat_crc
+81306        gs://cdg-data-uni-doff-the1-dev/ms_branch
+3305113      gs://cdg-data-uni-doff-the1-dev/ms_member_merge
+395785057    gs://cdg-data-uni-doff-the1-dev/ms_point_balance_expire
+1456807447   gs://cdg-data-uni-doff-the1-dev/ms_product
+2612469      gs://cdg-data-uni-doff-the1-dev/my_little_club_member_segment_hist/par_month=202411/par_day=20241111
+46110440     gs://cdg-data-uni-doff-the1-dev/sales_sku/par_month=201901/par_day=20190101
+17494565     gs://cdg-data-uni-doff-the1-dev/sales_tender/par_month=201901/par_day=20190101
+6093673      gs://cdg-data-uni-doff-the1-dev/tran_earned/par_month=201901/par_day=20190101
+301112       gs://cdg-data-uni-doff-the1-dev/tran_redeem/par_month=201901/par_day=20190101
