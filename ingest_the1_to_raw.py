@@ -114,7 +114,7 @@ def get_config(value):
                     , target_extension
                     , date_pattern
                     , archive_bucket 
-    FROM `core_system.sys_ingest_configures` 
+    FROM `cdg-data-uni-std-prod.core_system.sys_ingest_configures` 
     where 1 = 1 AND is_current = 1 AND is_enable = '1' and area in ('the1') """
     sub_query = f"and task = '{value}' ORDER BY seq "
     query = query + sub_query
@@ -262,13 +262,13 @@ def archive_data_source(source_bucket_name, archive_bucket, source_prefix, statu
 
     for blob in blobs_main:
         blob_main_names.append(blob.name)
-        destination_blob_main = f"{import_date}/{status}/{blob.name}"
+        destination_blob_main = f"{source_prefix}/{import_date}/{status}/{blob.name}"
         print(f"destination_blob : {destination_blob_main}")
         source_bucket.copy_blob(blob, archive_bucket, destination_blob_main)
 
     for blob in blobs_ctrl:
         blob_ctrl_names.append(blob.name)
-        destination_blob_ctrl = f"{import_date}/{status}/{blob.name}"
+        destination_blob_ctrl = f"{source_prefix}/{import_date}/{status}/{blob.name}"
         print(f"destination_blob : {destination_blob_ctrl}")
         source_bucket.copy_blob(blob, archive_bucket, destination_blob_ctrl)
     
@@ -304,5 +304,4 @@ def check_success_file(bucket_name, file_name):
         alert_message = f"The file '{data_file_name}' or ctrl_file '{ctrl_file_name}' does not found in bucket '{bucket_name}'.\n"
         print(alert_message)
         return 1
-    
-# ingest_t1_to_raw()
+        
